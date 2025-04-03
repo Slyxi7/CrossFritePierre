@@ -31,17 +31,17 @@
       <div class="subscription-card">
         <img src="../assets/logo-abonnement.png" alt="Logo CrossFrite" class="logo" />
         <h2>CrossFrite Abonnements</h2>
-        <p>Tarif mensuel</p>
+        <p>Mensuel : 30€</p>
       </div>
       <div class="subscription-card">
         <img src="../assets/logo-abonnement.png" alt="Logo CrossFrite" class="logo" />
         <h2>CrossFrite Abonnements</h2>
-        <p>Tarif trimestriel</p>
+        <p>Trimestriel : 80€</p>
       </div>
       <div class="subscription-card">
         <img src="../assets/logo-abonnement.png" alt="Logo CrossFrite" class="logo" />
         <h2>CrossFrite Abonnements</h2>
-        <p>Tarif annuel</p>
+        <p>Annuel : 300€</p>
       </div>
     </div>
     <div class="condition">
@@ -65,29 +65,36 @@
   max-width: 100vw;
 }
 
-/* .subscription-container {
+.subscription-container {
   display: flex;
-  gap: 20px;
-} */
+  gap: 100px;
+}
 
-/* .subscription-card {
-  background: #f8f1e4;
-  padding: 20px;
-  border-radius: 10px;
+.subscription-card {
+  padding: 0;
+  margin: 0;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} */
+  background-color: white;
+}
 
-/* .logo {
-  width: 80px;
-  height: auto;
-} */
+.subscription-container h2{
+  font-size: 20px;
+}
 
-/* .condition {
-  margin-top: 20px;
+.subscription-container p{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.condition {
+  margin-top: 150px;
   background: white;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} */
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.condition p {
+  font-size: 15px;
+}
 </style>
