@@ -21,6 +21,7 @@
     <div class="condition" @click="openModal">
       <p>Condition d'engagement</p>
     </div>
+    <!-- Fenêtre modale qui s'affiche quand on clique dessus -->
     <div v-if="isModalOpen" class="modal-overlay">
       <div class="modal">
         <span class="close-btn" @click="closeModal">&times;</span>
@@ -33,38 +34,44 @@
 
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from 'vue'; // On importe "ref" depuis Vue
 
+// Variable qui dit si la modale est ouverte ou non
 const isModalOpen = ref(false);
 
+// Fonction pour ouvrir la modale
 const openModal = () => {
   isModalOpen.value = true;
 };
 
+// Fonction pour fermer la modale
 const closeModal = () => {
   isModalOpen.value = false;
 };
-</script>
+</script> 
 
 
 <style scoped>
+/* Conteneur principal */
 .main-app {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("../assets/background.png");
+  background-image: url("../assets/background.png"); /* image de fond */
   background-size: cover;
   background-position: center;
   height: 100vh;
   max-width: 100vw;
 }
 
+/* Conteneur des abonnements (cartes) */
 .subscription-container {
   display: flex;
-  gap: 100px;
+  gap: 100px; /* espace entre les abonnements */
 }
 
+/* 1 Carte d’abonnement */
 .subscription-card {
   padding: 0;
   margin: 0;
@@ -72,15 +79,18 @@ const closeModal = () => {
   background-color: white;
 }
 
+/* Conteneur des titre des cartes */
 .subscription-container h2 {
   font-size: 20px;
 }
 
+/* Conteneur du texte des prix */
 .subscription-container p {
   font-family: "Inter", sans-serif;
   font-weight: 600;
 }
 
+/* Bouton des conditions d'utilisations */
 .condition {
   margin-top: 150px;
   background: white;
@@ -91,20 +101,25 @@ const closeModal = () => {
   cursor: pointer;
 }
 
+/* Texte du bouton des conditions d'utilisations */
 .condition p {
   font-size: 15px;
 }
+
+/* Arrière-plan de la page quand la modale est ouverte */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6); /* fond noir transparent */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* Contenu de la modale */
 .modal {
   background: white;
   padding: 20px;
@@ -113,6 +128,8 @@ const closeModal = () => {
   border-radius: 10px;
   position: relative;
 }
+
+/* Bouton de fermeture de la modale (la croix) */
 .close-btn {
   position: absolute;
   top: 10px;

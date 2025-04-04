@@ -29,88 +29,98 @@
 </script>
 
 <style scoped>
+/* Conteneur principal */
 .contact-container {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    position: relative;
-    background-image: url("../assets/background.png");
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+  background-image: url("../assets/background.png"); /* image de fond */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
 }
 
+/* Box du formulaire */
 .form-box {
-    margin-top: 150px;
-    background: white;
-    padding: 30px;
-    border-radius: 20px;
-    display: inline-block;
-    width: 600px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 150px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  display: inline-block;
+  width: 600px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* ombre */
 }
 
+/* Organisation du formulaire */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column; /* en colonne */
+  gap: 15px; /* espace entre les champs */
 }
 
+/* Style des champs et bouton */
 input,
 button {
-    padding: 15px;
-    width: 100%;
-    font-size: 18px;
-    border: none;
-    background: #8F8888;
-    color: black;
-    cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  background: #8F8888;
+  color: black;
+  cursor: pointer;
 }
 
+/* Style des champs */
 input {
-    text-align: center;
-    line-height: 50px;
-    height: 50px;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
 }
 
+/* Style du bouton */
 button {
-    background: #8F8888;
-    font-weight: bold;
-    padding: 10px;
-    font-size: 16px;
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 5px;
+  background: #8F8888;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 16px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
 }
 
-/* Style texte adresse et téléphone */
+/* Bloc infos contact */
 .contact-info {
-    margin-top: 30px;
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 
-        -2px -2px 0 white,  
-         2px -2px 0 white,  
-        -2px  2px 0 white,  
-         2px  2px 0 white;
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 
+    -2px -2px 0 white,  
+     2px -2px 0 white,  
+    -2px  2px 0 white,  
+     2px  2px 0 white; /* ombre blanche autour pour rajouter l'effet de texte de ma maquette */
 }
 
+/* Style adresse */
 .address {
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: none;
-    line-height: 1.5;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 1.5;
 }
 
+/* Style téléphone */
 .phone {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
+/* Conteneur de la carte (iframe de google) */
 .map-container {
-    margin-top: 20px;
+  margin-top: 20px;
 }
+
 </style>
